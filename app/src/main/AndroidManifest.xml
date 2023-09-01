@@ -14,31 +14,35 @@
         android:theme="@style/Theme.RecyclerViewApplications"
         tools:targetApi="31">
         <activity
-            android:name=".InstagramActivity"
-            android:exported="true" >
-        <intent-filter>
-            <action android:name="android.intent.action.MAIN" />
+            android:name=".TwitterActivity"
+            android:exported="false" >
 
-            <category android:name="android.intent.category.LAUNCHER" />
-        </intent-filter>
+        </activity>
+        <activity
+            android:name=".InstagramActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
         </activity>
         <activity
             android:name=".MainActivity"
             android:exported="false" />
         <activity
             android:name=".MessengerActivity"
-            android:exported="false">
-
-        </activity>
+            android:exported="false"></activity>
         <activity
             android:name=".FacebookActivity"
-            android:exported="false"></activity>
+            android:exported="false" />
         <activity
             android:name=".CallsLogActivity"
-            android:exported="false"></activity>
+            android:exported="false" />
         <activity
             android:name=".GmailActivity"
-            android:exported="false"></activity>
+            android:exported="false" />
     </application>
 
 </manifest>

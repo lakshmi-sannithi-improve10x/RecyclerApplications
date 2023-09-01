@@ -7,6 +7,8 @@ import android.view.ViewGroup;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.squareup.picasso.Picasso;
+
 public class InstagramRvAdapter extends RecyclerView.Adapter<InstagramRvViewHolder> {
     public InstagramItems[] items;
     public InstagramRvAdapter(InstagramItems[] instagramItems){
@@ -26,7 +28,7 @@ public class InstagramRvAdapter extends RecyclerView.Adapter<InstagramRvViewHold
         InstagramItems item = items[position];
         holder.contactNameTxt.setText(item.contactName);
         holder.descriptionTxt.setText(item.description);
-
+        Picasso.get().load(item.imageUrl).into(holder.imageIv);
     }
 
     @Override
